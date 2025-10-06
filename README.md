@@ -1,96 +1,109 @@
-# Seven2025
-## Repositório oficial da Seven nas competições de 2025 (Uncharted).
-### Aqui está a salvo e catalogado os programas teleoperados e autônomos, códigos, recursos extras e algoritmos.
+# 🚀 Seven2025
 
-## Equipe
+## 📦 Repositório Oficial — *Uncharted Season*
+> Aqui estão salvos e organizados todos os programas **teleoperados**, **autônomos**, **códigos**, **recursos extras** e **algoritmos** da equipe **Seven** para as competições de 2025.
+
+---
+
+## 👥 Equipe Seven
+
 <table>
-
-  <!-- Técnicos (no topo) -->
+  <!-- Técnicos -->
   <tr>
     <td align="center">
       <img src="https://dummyimage.com/100x100/cccccc/000000.png&text=Rayan" width="100px;" alt="Rayan"/>
       <br />
-      <sub><b>Rayan</b></sub>
-      <br />Técnico
+      <sub><b>Rayan</b></sub><br />
+      <span style="color: gray;">Técnico</span>
     </td>
     <td align="center">
       <img src="https://dummyimage.com/100x100/cccccc/000000.png&text=Gabriel" width="100px;" alt="Gabriel"/>
       <br />
-      <sub><b>Gabriel</b></sub>
-      <br />Técnico
+      <sub><b>Gabriel</b></sub><br />
+      <span style="color: gray;">Técnico</span>
     </td>
   </tr>
 
-  <!-- Demais membros -->
+  <!-- Programação e Montagem -->
   <tr>
     <td align="center">
-      <a href="https://github.com/F8wwa">
+      <a href="https://github.com/F8wwa" target="_blank">
         <img src="https://avatars.githubusercontent.com/u/124955833?v=4" width="100px;" alt="Mikael"/>
         <br />
-        <sub><b>Mikael</b></sub>
-        <br />Programação
+        <sub><b>Mikael</b></sub><br />
+        <span style="color: gray;">Programação</span>
       </a>
     </td>
     <td align="center">
       <img src="https://dummyimage.com/100x100/cccccc/000000.png&text=Kauan" width="100px;" alt="Kauan"/>
       <br />
-      <sub><b>Kauan</b></sub>
-      <br />Programação, Montagem
+      <sub><b>Kauan</b></sub><br />
+      <span style="color: gray;">Programação, Montagem</span>
     </td>
     <td align="center">
       <img src="https://dummyimage.com/100x100/cccccc/000000.png&text=Anna+J" width="100px;" alt="Anna Júlia"/>
       <br />
-      <sub><b>Anna Júlia</b></sub>
-      <br />Programação, Montagem
+      <sub><b>Anna Júlia</b></sub><br />
+      <span style="color: gray;">Programação, Montagem</span>
     </td>
     <td align="center">
       <img src="https://dummyimage.com/100x100/cccccc/000000.png&text=Julia" width="100px;" alt="Julia"/>
       <br />
-      <sub><b>Julia</b></sub>
-      <br />Montagem, Design
+      <sub><b>Julia</b></sub><br />
+      <span style="color: gray;">Montagem, Design</span>
     </td>
   </tr>
 
+  <!-- Projeto e Modelagem -->
   <tr>
     <td align="center">
       <img src="https://dummyimage.com/100x100/cccccc/000000.png&text=Bronzi" width="100px;" alt="Bronzi"/>
       <br />
-      <sub><b>Bronzi</b></sub>
-      <br />Modelagem 3D, Usinagem
+      <sub><b>Bronzi</b></sub><br />
+      <span style="color: gray;">Modelagem 3D, Usinagem</span>
     </td>
     <td align="center">
       <img src="https://dummyimage.com/100x100/cccccc/000000.png&text=Samuel" width="100px;" alt="Samuel"/>
       <br />
-      <sub><b>Samuel</b></sub>
-      <br />Projeto, Montagem
+      <sub><b>Samuel</b></sub><br />
+      <span style="color: gray;">Projeto, Montagem</span>
     </td>
     <td align="center">
       <img src="https://dummyimage.com/100x100/cccccc/000000.png&text=Leticia" width="100px;" alt="Letícia"/>
       <br />
-      <sub><b>Letícia</b></sub>
-      <br />Projeto, Montagem
+      <sub><b>Letícia</b></sub><br />
+      <span style="color: gray;">Projeto, Montagem</span>
     </td>
     <td align="center">
       <img src="https://dummyimage.com/100x100/cccccc/000000.png&text=Bonfanti" width="100px;" alt="Bonfanti"/>
       <br />
-      <sub><b>Bonfanti</b></sub>
-      <br />Projeto do Robô, Identidade Visual
+      <sub><b>Bonfanti</b></sub><br />
+      <span style="color: gray;">Projeto do Robô, Identidade Visual</span>
     </td>
   </tr>
 
+  <!-- Design e Montagem -->
   <tr>
     <td align="center">
       <img src="https://dummyimage.com/100x100/cccccc/000000.png&text=Rossato" width="100px;" alt="Rossato"/>
       <br />
-      <sub><b>Rossato</b></sub>
-      <br />Montagem do Robô
+      <sub><b>Rossato</b></sub><br />
+      <span style="color: gray;">Montagem do Robô</span>
     </td>
     <td align="center">
       <img src="https://dummyimage.com/100x100/cccccc/000000.png&text=Kusdra" width="100px;" alt="Kusdra"/>
       <br />
-      <sub><b>Kusdra</b></sub>
-      <br />Design, Projeto
+      <sub><b>Kusdra</b></sub><br />
+      <span style="color: gray;">Design, Projeto</span>
     </td>
   </tr>
-
 </table>
+
+---
+
+## 📁 Organização do Repositório
+- `📂 libs/` → Bibliotecas auxiliares e utilitários
+- `📂 docs/` → Arquivos de documentação geral
+- `📂 extras/` → Recursos adicionais, testes e experimentações
+
+---
