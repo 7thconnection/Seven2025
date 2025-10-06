@@ -1,7 +1,8 @@
 # Seven2025
-## Códigos e recursos para competição.
+## Repositório oficial da Seven nas competições de 2025 (Uncharted).
+### Aqui está a salvo e catalogado os programas teleoperados e autônomos, códigos, recursos extras e algoritmos.
 
-## Programadores
+## Equipe
 <table>
   <tr>
     <td align="center">
