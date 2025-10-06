@@ -26,11 +26,14 @@ public class Controle extends LinearOpMode {
 
         leftDrive  = hardwareMap.get(DcMotor.class, "motor0");
         rightDrive = hardwareMap.get(DcMotor.class, "motor1");
-        Arm = hardwareMap.get(DcMotor.class, "motor4");
-        Gancho = hardwareMap.get(Servo.class, "servo1");
+        Arm = hardwareMap.get(DcMotor.class, "Arm");
 
         leftDrive.setDirection(DcMotor.Direction.FORWARD);
         rightDrive.setDirection(DcMotor.Direction.REVERSE);
+        Arm.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
+        Arm.setMode(DcMotor.RunMode.RUN_USING_ENCODER);
+        Arm.setDirection(DcMotor.Direction.FORWARD);
+        
 
         waitForStart();
         runtime.reset();
@@ -74,15 +77,6 @@ public class Controle extends LinearOpMode {
             leftDrive.setPower(0);
             }
             
-            if (gamepad1.left_stick_y != 0)
-            {
-                Arm.setPower(EsqStick);
-            }
-            else
-            {
-                Arm.setPower(0);
-            }
-            
             if (gamepad1.right_bumper && Force < 0.75 && PodeAdic == true)
             {
                 Force += 0.1;
@@ -94,7 +88,16 @@ public class Controle extends LinearOpMode {
                 Force -= 0.1;
                 sleep(300);
             }
+            if (gamepad1.b)
+            {
+                Arm.setPower(0.5);
+            }
+            else
+            {
+                Arm.setPower(0);
+            }
             telemetry.addData("Force", Force);
+            telemetry.addData("Rotações", Arm.getCurrentPosition() / 360);
             telemetry.update();
         }
     }
