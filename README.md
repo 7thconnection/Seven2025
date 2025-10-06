@@ -8,9 +8,9 @@
   <!-- Técnicos (no topo) -->
   <tr>
     <td align="center">
-      <img src="https://dummyimage.com/100x100/cccccc/000000.png&text=Ranyan" width="100px;" alt="Ranyan"/>
+      <img src="https://dummyimage.com/100x100/cccccc/000000.png&text=Rayan" width="100px;" alt="Rayan"/>
       <br />
-      <sub><b>Ranyan</b></sub>
+      <sub><b>Rayan</b></sub>
       <br />Técnico
     </td>
     <td align="center">
