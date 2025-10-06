@@ -1,2 +1,4 @@
 # Seven2025
-Códigos e recursos do robô.
+## ------------------------------------
+## Códigos e recursos para competição.
+## ------------------------------------
