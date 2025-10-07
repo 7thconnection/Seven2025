@@ -1,6 +1,6 @@
 # 🚀 Seven2025
 
-## 📦 Repositório Oficial — *Uncharted Season*
+## 📦 Repositório Oficial — *Decode Season*
 > Aqui estão salvos e organizados todos os programas **teleoperados**, **autônomos**, **códigos**, **recursos extras** e **algoritmos** da equipe **Seven** para as competições de 2025.
 
 ---
@@ -78,26 +78,7 @@
       <img src="https://dummyimage.com/100x100/cccccc/000000.png&text=Bonfanti" width="100px;" alt="Bonfanti"/>
       <br />
       <sub><b>Bonfanti</b></sub><br />
-      <span style="color: gray;">Projeto do Robô, Identidade Visual</span>
-    </td>
-  </tr>
-
-  <!-- Design e Montagem -->
-  <tr>
-    <td align="center">
-      <img src="https://dummyimage.com/100x100/cccccc/000000.png&text=Rossato" width="100px;" alt="Rossato"/>
-      <br />
-      <sub><b>Rossato</b></sub><br />
-      <span style="color: gray;">Montagem do Robô</span>
-    </td>
-    <td align="center">
-      <img src="https://dummyimage.com/100x100/cccccc/000000.png&text=Kusdra" width="100px;" alt="Kusdra"/>
-      <br />
-      <sub><b>Kusdra</b></sub><br />
-      <span style="color: gray;">Design, Projeto</span>
-    </td>
-  </tr>
-</table>
+      <span style="color: 
 
 ---
 
