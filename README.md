@@ -10,3 +10,8 @@
 - `📂 extras/` → Recursos adicionais, testes e experimentações
 
 ---
+
+## 📁 Arquivos neste repositório
+- `📀 TeleOpMode.jar` → Programa teleoperado do rôbo.
+
+---
