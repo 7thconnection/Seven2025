@@ -13,5 +13,5 @@
 
 ## 📁 Arquivos neste repositório
 - `📀 TeleOpMode.jar` → Programa teleoperado do rôbo.
-
+- `📀 TeleOpModeCommented.jar` → Programa teleoperado do rôbo com comentários.
 ---
