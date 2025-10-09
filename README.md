@@ -14,4 +14,6 @@
 ## 📁 Arquivos neste repositório
 - `📀 TeleOpMode.jar` → Programa teleoperado do rôbo.
 - `📀 TeleOpModeCommented.jar` → Programa teleoperado do rôbo com comentários.
+- `📀 AutonomousMode.jar` → Programa autônomo do rôbo.
+- `📀 AutonomousModeCommented.jar` → Programa autônomo do rôbo com comentários.
 ---
