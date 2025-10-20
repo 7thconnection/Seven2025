@@ -1,1 +1,3 @@
- 
+ O Roadrunner é uma biblioteca de planejamento de movimentação de robôs criada para facilitar a navegação autônoma.
+  Essa biblioteca permite a criação de trajetórios complexos, como curvas suaves e controla a velocidade com alta precisão.
+  A biblioteca também cuida do processo de navegação, determinando a posição do robô na arena a partir do processo de odometria.
