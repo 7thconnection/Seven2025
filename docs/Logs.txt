@@ -1,1 +1,1 @@
-
+O robô foi projetado utilizando um único motor para acionar tanto o intaker quanto o feeder. O sistema de lançamento conta com 1 motor com força de lançamento configurada para 80% da potência total (DefaultForce = 0.8). A locomoção do robô é realizada por tração traseira, utilizando 2 motores responsáveis pelo movimento das rodas traseiras. A decisão de utilizar apenas dois motores e não adotar rodas mecanum foi tomada devido à indisponibilidade de um quarto motor HD Hex, o que levou a escolha de se utilizar a tração traseira.
