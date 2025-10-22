@@ -1,3 +1,21 @@
  O Roadrunner é uma biblioteca de planejamento de movimentação de robôs criada para facilitar a navegação autônoma.
-  Essa biblioteca permite a criação de trajetórios complexos, como curvas suaves e controla a velocidade com alta precisão.
-  A biblioteca também cuida do processo de navegação, determinando a posição do robô na arena a partir do processo de odometria.
+ -Essa biblioteca permite a criação de trajetórios complexos, como curvas suaves e controla a velocidade com alta precisão.
+ -A biblioteca também cuida do processo de navegação, determinando a posição do robô na arena a partir do processo de odometria.
+
+ A aplicação dessa biblioteca no robô tem fins de melhorar o processo de odometria, principalmente no modo autônomo.
+
+// Links
+Documentação oficial do Road Runner: https://docs.roadrunner.dev
+Repositório GitHub do Road Runner: https://github.com/acmerobotics/road-runner
+Quickstart para FTC com Road Runner: https://github.com/acmerobotics/road-runner-quickstart
+Ferramenta RRPathGen para geração de trajetórias: https://learnroadrunner.com/tool/rrpathgen
+Documentação do Road Runner 1.0.0: https://rr.brott.dev/docs/v1-0/
+Guia de instalação do Road Runner: https://docs.roadrunner.dev/docs/general/install
+Guia de instalação do Road Runner 1.0: https://rr.brott.dev/docs/v1-0/installation/
+Ferramenta RRPathGen no GitHub: https://github.com/Jarhead20/RRPathGen
+
+// Links do "Meep Meep" (Visualizador de trajetório que funciona em conjunto com o Road Runner)
+https://learnroadrunner.com/tool/meepmeep
+https://github.com/acmerobotics/MeepMeep
+https://github.com/NoahBres/MeepMeep
+https://rr.brott.dev/docs/meepmeep/
