@@ -5,7 +5,6 @@
 ---
 
 ## 📁 Organização do Repositório
-- `📂 libs/` → Bibliotecas auxiliares e utilitários
 - `📂 docs/` → Arquivos de documentação geral
 - `📂 extras/` → Recursos adicionais, testes e experimentações
 
