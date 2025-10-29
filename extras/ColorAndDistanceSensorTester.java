@@ -35,11 +35,11 @@ public class Teste extends LinearOpMode {
                 telemetry.addData("Cor", "Azul");
             }
 
-            telemetry.addData("Red", sensorColor.red());
-            telemetry.addData("Green", sensorColor.green());
-            telemetry.addData("Blue", sensorColor.blue());
-            telemetry.addData("Alpha", sensorColor.alpha())
-            telemetry.addData("Distance", sensorDistance.getDistance(DistanceUnit.CM));
+            telemetry.addData("Vermelho", sensorColor.red());
+            telemetry.addData("Verde", sensorColor.green());
+            telemetry.addData("Azul", sensorColor.blue());
+            telemetry.addData("Luz do ambiente", sensorColor.alpha())
+            telemetry.addData("Distancia", sensorDistance.getDistance(DistanceUnit.CM));
             telemetry.update();
         }
     }
