@@ -1,4 +1,3 @@
-
 package org.firstinspires.ftc.teamcode;
 
 import com.qualcomm.robotcore.eventloop.opmode.Disabled;
@@ -16,60 +15,42 @@ public class Controle extends LinearOpMode {
     private ElapsedTime runtime = new ElapsedTime();
     private DcMotor leftDrive = null;
     private DcMotor rightDrive = null;
-    private DcMotor Arm = null;
-    private Servo Gancho = null;
+    private DcMotor Launcher = null;
+    private Servo Alavanca = null;
 
     @Override
     public void runOpMode() {
-        telemetry.addData("Status", "Inicializado :D");
+        telemetry.addData("Status", "Pronto.");
         telemetry.update();
 
         leftDrive  = hardwareMap.get(DcMotor.class, "motor0");
         rightDrive = hardwareMap.get(DcMotor.class, "motor1");
-        Arm = hardwareMap.get(DcMotor.class, "Arm");
-
+        Launcher = hardwareMap.get(DcMotor.class, "lancador");
+        Alavanca = hardwareMap.get(Servo.class, "alavanca");
+  
         leftDrive.setDirection(DcMotor.Direction.FORWARD);
         rightDrive.setDirection(DcMotor.Direction.REVERSE);
-        Arm.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
-        Arm.setMode(DcMotor.RunMode.RUN_USING_ENCODER);
-        Arm.setDirection(DcMotor.Direction.FORWARD);
+        Launcher.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
+        Launcher.setMode(DcMotor.RunMode.RUN_USING_ENCODER);
+        Launcher.setDirection(DcMotor.Direction.FORWARD);
         
-
         waitForStart();
         runtime.reset();
         
-        double Force = 0.6;
-        boolean PodeAdic = true;
+        double Force = 1;
+        boolean AlState = false;
 
         while (opModeIsActive()) {
-
-            double StickYPower;
-            double StickXPower;
-            
-            double EsqStick;
-            
-            float PowerTgLeft;
-
-            double drive = -gamepad1.right_stick_y;
-            double turn  =  gamepad1.right_stick_x;
-            
-            
-            double arm  =  -gamepad1.left_stick_y;
-            
-        
-            StickYPower = Range.clip(drive, -1.0, 1.0);
-            StickXPower = Range.clip(turn, -1.0, 1.0);
-            EsqStick = Range.clip(arm, -1.0, 1.0);
              
             if (gamepad1.right_stick_y != 0)
             {
             leftDrive.setPower(Force * (gamepad1.right_stick_y));
             rightDrive.setPower(Force * (gamepad1.right_stick_y));
             }
-            else if (gamepad1.right_stick_x != 0)
+            else if (gamepad1.left_stick_x != 0)
             {
-            rightDrive.setPower(-Force * (gamepad1.right_stick_x));
-            leftDrive.setPower(Force * (gamepad1.right_stick_x));
+            rightDrive.setPower(Force * (gamepad1.left_stick_x));
+            leftDrive.setPower(-Force * (gamepad1.left_stick_x));
             }
             else
             {
@@ -77,27 +58,46 @@ public class Controle extends LinearOpMode {
             leftDrive.setPower(0);
             }
             
-            if (gamepad1.right_bumper && Force < 0.75 && PodeAdic == true)
+            if (gamepad1.right_bumper && Force < 1)
             {
                 Force += 0.1;
                 sleep(300);
-                
             }
-            else if (gamepad1.left_bumper && Force > 0.35 && PodeAdic == true)
+            else if (gamepad1.left_bumper && Force > 0.35)
             {
                 Force -= 0.1;
                 sleep(300);
             }
-            if (gamepad1.b)
+            if (gamepad1.right_trigger != 0)
             {
-                Arm.setPower(0.5);
+                Launcher.setPower(gamepad1.right_trigger);
             }
             else
             {
-                Arm.setPower(0);
+                Launcher.setPower(0);
             }
-            telemetry.addData("Force", Force);
-            telemetry.addData("Rotações", Arm.getCurrentPosition() / 360);
+            
+            if (gamepad1.left_trigger != 0)
+            {
+                if (AlState == true)
+                {
+                    AlState = ! AlState;
+                    Alavanca.setPosition(0.45);
+                    sleep(300);
+                }
+                else
+                {
+                    AlState = ! AlState;
+                    Alavanca.setPosition(0.77);
+                    sleep(300);
+                }
+            }
+
+            telemetry.addData("Força Base", Force);
+            telemetry.addData("Força D/R Direita", rightDrive.getPower());
+            telemetry.addData("Força D/R Esquerda", leftDrive.getPower());
+            telemetry.addData("Estado da Alavanca", AlState == true ? "Aberta" : "Fechada");
+            // telemetry.addData("Rotações", Launcher.getCurrentPosition() / 1444);
             telemetry.update();
         }
     }
