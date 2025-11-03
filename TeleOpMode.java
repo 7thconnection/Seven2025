@@ -17,6 +17,8 @@ public class Controle extends LinearOpMode {
     private DcMotor rightDrive = null;
     private DcMotor Launcher = null;
     private Servo Alavanca = null;
+    private double PosAberta = 0.74;
+    private double PosFechada = 0.45;
 
     @Override
     public void runOpMode() {
@@ -40,6 +42,8 @@ public class Controle extends LinearOpMode {
         double Force = 1;
         boolean AlState = false;
 
+        Alavanca.setPosition(PosAberta);
+        
         while (opModeIsActive()) {
              
             if (gamepad1.right_stick_y != 0)
@@ -70,7 +74,7 @@ public class Controle extends LinearOpMode {
             }
             if (gamepad1.right_trigger != 0)
             {
-                Launcher.setPower(gamepad1.right_trigger);
+                Launcher.setPower(1);
             }
             else
             {
@@ -82,13 +86,13 @@ public class Controle extends LinearOpMode {
                 if (AlState == true)
                 {
                     AlState = ! AlState;
-                    Alavanca.setPosition(0.45);
+                    Alavanca.setPosition(PosFechada);
                     sleep(300);
                 }
                 else
                 {
                     AlState = ! AlState;
-                    Alavanca.setPosition(0.77);
+                    Alavanca.setPosition(PosAberta);
                     sleep(300);
                 }
             }
@@ -96,7 +100,7 @@ public class Controle extends LinearOpMode {
             telemetry.addData("Força Base", Force);
             telemetry.addData("Força D/R Direita", rightDrive.getPower());
             telemetry.addData("Força D/R Esquerda", leftDrive.getPower());
-            telemetry.addData("Estado da Alavanca", AlState == true ? "Aberta" : "Fechada");
+            telemetry.addData("Estado da Alavanca", AlState == false ? "Aberta" : "Fechada");
             // telemetry.addData("Rotações", Launcher.getCurrentPosition() / 1444);
             telemetry.update();
         }
